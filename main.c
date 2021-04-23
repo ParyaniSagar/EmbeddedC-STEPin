@@ -1,9 +1,5 @@
 #include <avr/io.h>
 
-
-
-
-
 uint16_t volatile sitting,heater;
 
 int main(void)
