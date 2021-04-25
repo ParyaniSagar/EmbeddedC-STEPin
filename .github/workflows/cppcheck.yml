@@ -1,4 +1,4 @@
-name: Code Quality - Static Code - Cppcheck
+lname: Code Quality - Static Code - Cppcheck
 
 on:
   push:
@@ -16,4 +16,4 @@ jobs:
     - name: Install cppcheck
       run: sudo apt -y install cppcheck
     - name: Run cppcheck
-      run: cppcheck --enable=all 
+      run: make analysis 
