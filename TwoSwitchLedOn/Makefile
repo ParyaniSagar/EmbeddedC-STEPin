@@ -1,9 +1,10 @@
-PROJ_NAME = Activity1
+PROJ_NAME = TwoSwitchLedOn
 
 BUILD_DIR = build
 
 # All Source code files
-SRC = main.c
+SRC = Project_Main.c\
+./src/port_init.c
 
 
 # All header file paths
