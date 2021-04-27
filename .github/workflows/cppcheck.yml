@@ -16,4 +16,4 @@ jobs:
     - name: Install cppcheck
       run: sudo apt -y install cppcheck
     - name: Run cppcheck
-      run: make -C analysis 
+      run: make analysis 
