@@ -1,8 +1,8 @@
 #include<avr/io.h>
 
-#include"../inc/port_init.h"
+#include"../inc/Activity1.h"
 
-void port_init()
+void Activity1()
 {
     DDRD &= ~(1<<PD2); //input pin Port D pin 2
     DDRD &= ~(1<<PD3);  //input pin Port D pin 3
@@ -13,4 +13,14 @@ void port_init()
 
     /*SETTIG PORT B PIN 0 AS OUTPUT */
     DDRB |= (1<<PB0);
+
+    if  ( (!(PIND & (1<<PD2))) & (!(PIND & (1<<PD3))) )
+    {
+        PORTB |= (1<<PB0);   //TURN ON LED
+    }
+    else
+    {
+       PORTB &= ~(1<<PB0);  //TURN OFF LED
+    }
 }
+

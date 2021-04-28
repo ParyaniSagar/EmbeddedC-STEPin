@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "port_init.h": "c"
+        "port_init.h": "c",
+        "activity1.h": "c",
+        "change_led_state.h": "c",
+        "activity2.h": "c",
+        "stdlib.h": "c",
+        "type_traits": "c",
+        "activity3.h": "c"
     }
 }

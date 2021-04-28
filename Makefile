@@ -1,14 +1,16 @@
-PROJ_NAME = TwoSwitchLedOn
+PROJ_NAME = embc
 
 BUILD_DIR = build
 
 # All Source code files
-SRC = Project_Main.c\
-./src/port_init.c
+SRC = SeatHeatingApp.c\
+./src/Activity1.c\
+./src/Activity2.c\
+./src/Activity3.c
 
 
 # All header file paths
-#INC = -I inc
+INC = -I inc
 
 # Find out the OS and configure the variables accordingly
 ifdef OS	# All configurations for Windwos OS
@@ -34,7 +36,7 @@ endif
 
 all:$(BUILD_DIR)
 # Compile the code and generate the ELF file
-	$(CC) -g -Wall -Os -mmcu=atmega328  $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
+	$(CC) -g -Wall -Os -mmcu=atmega328  $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 	$(AVR_OBJ_CPY) -O ihex $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf) $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).hex)
 	rm $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
