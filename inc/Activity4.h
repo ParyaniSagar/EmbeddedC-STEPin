@@ -12,6 +12,7 @@
 #ifndef _Activity4_h_
 #define _Activity4_h_
 
-void Activity4(void);
+
+void Activity4(char  *data);
 
 #endif

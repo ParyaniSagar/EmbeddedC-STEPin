@@ -8,7 +8,7 @@ int main(void)
     while(1)
     {
         Activity1();
-        /*Activity2 is used in Activity3*/
+        /*Activity2 AND is used in Activity3*/
         Activity3();
     }
     return 0;

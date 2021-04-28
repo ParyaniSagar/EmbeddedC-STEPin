@@ -6,6 +6,7 @@
         "activity2.h": "c",
         "stdlib.h": "c",
         "type_traits": "c",
-        "activity3.h": "c"
+        "activity3.h": "c",
+        "string.h": "c"
     }
 }
