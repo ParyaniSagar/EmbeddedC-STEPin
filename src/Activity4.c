@@ -21,19 +21,21 @@ void USART_init()
     UCSR0B = (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0) | (1<<TXCIE0);
 }
 
+/*Program to read the value coming thru any otehr peripheral*/
 char USART_read()
 {
     while( !(UCSR0A & (1<<RXC0)) );
     return UDR0;
 }
 
-
+/*Program to write to other peripheral using UART*/
 void USART_write(char data)
 {
     while( !(UCSR0A & (1<<UDRE0)) );
     UDR0 = data;
 }
 
+/*To write a string data using a loop*/
 void write_string(char *string)
 {
     int count;

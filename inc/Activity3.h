@@ -1,7 +1,7 @@
 /**
  * @file Activity3.h
  * @author Sagar Paryani (paryani7sagar@gmail.com)
- * @brief 
+ * @brief To return the ADC value captured by the controller
  * @version 0.1
  * @date 2021-04-27
  * 

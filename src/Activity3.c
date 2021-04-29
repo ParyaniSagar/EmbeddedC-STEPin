@@ -24,27 +24,27 @@ void Activity3()
     TCNT0 = 0;
     while (1)
     {
-        
+        Activity1();
         ADC_val = Activity2();
         if(ADC_val > 0 && ADC_val <= 200)
         {
             OCR0A = 51;
-            Activity4("Fifty One\n");
+            Activity4("20 degree celcius\n");
         }
         else if(ADC_val > 210 && ADC_val <= 500)
         {
             OCR0A = 102;
-            Activity4("One Hundred Two\n");
+            Activity4("25 degree celcius\n");
         }
         else if(ADC_val > 510 && ADC_val <= 700)
         {
             OCR0A = 180;  
-            Activity4("One Hundred Eighty\n"); 
+            Activity4("29 degree celcius\n"); 
         }
         else if(ADC_val > 710 && ADC_val <= 1024)
         {
             OCR0A = 250;
-            Activity4("Two Hundred Fifty\n");
+            Activity4("33 degree celcius\n");
         }
         
     }

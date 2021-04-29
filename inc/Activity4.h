@@ -1,7 +1,7 @@
 /**
  * @file Activity4.h
  * @author Sagar Paryani (paryani7sagar@gmail.com)
- * @brief Send Data from one ECU to other using UART communication protocol.
+ * @brief Send Data to serial monitor using UART communication protocol.
  * @version 0.1
  * @date 2021-04-27
  * 
