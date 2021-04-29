@@ -12,7 +12,7 @@ To read the values of ADC with the help of Potentiometer.
 To vary the PWM pulses based on the input ADC values.
 
 #### Activity 4
-to send the data serially usin UART protocol
+to send the data serially using UART protocol
 
 ## Working of the Simulation.
 
