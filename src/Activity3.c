@@ -1,5 +1,6 @@
 #include<avr/io.h>
 
+#include"../inc/Activity1.h"
 #include"../inc/Activity2.h"
 #include"../inc/Activity3.h"
 #include"../inc/Activity4.h"
@@ -29,22 +30,22 @@ void Activity3()
         if(ADC_val > 0 && ADC_val <= 200)
         {
             OCR0A = 51;
-            Activity4("20 degree celcius\n");
+            Activity4("20 degrees\n");
         }
         else if(ADC_val > 210 && ADC_val <= 500)
         {
             OCR0A = 102;
-            Activity4("25 degree celcius\n");
+            Activity4("25 degrees\n");
         }
         else if(ADC_val > 510 && ADC_val <= 700)
         {
             OCR0A = 180;  
-            Activity4("29 degree celcius\n"); 
+            Activity4("29 degrees\n"); 
         }
         else if(ADC_val > 710 && ADC_val <= 1024)
         {
             OCR0A = 250;
-            Activity4("33 degree celcius\n");
+            Activity4("33 degrees\n");
         }
         
     }
